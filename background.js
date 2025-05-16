@@ -24,7 +24,7 @@ chrome.runtime.onMessage.addListener((msg, sender, completion_handler) => {
 		form.append('bookmark-content', msg.data.html);
 
 		// POST to Micro.blog
-		fetch('https://stoic_neumann.orb.local/micropub', {
+		fetch('https://micro.blog/micropub', {
 			method: 'POST',
 			body: form
 		})
